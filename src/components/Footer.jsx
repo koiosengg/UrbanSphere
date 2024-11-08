@@ -90,13 +90,11 @@ function Footer() {
           </a>
         </p>
         <div className="footerDownRight">
-          <a>www.urbansphere.com</a>
+          <a href="#">Privacy</a>
           <p>|</p>
-          <a>Privacy</a>
+          <a href="#">Cookies</a>
           <p>|</p>
-          <a>Cookies</a>
-          <p>|</p>
-          <a>Contact Us</a>
+          <a href="#">Contact Us</a>
         </div>
       </div>
     </div>
