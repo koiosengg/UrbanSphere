@@ -39,7 +39,7 @@ function Ivoryline() {
             <img src={IvorylineName} alt="Urban Sphere Ivoryline Name" />
             <MoreInfoButton onSelect={handleOpenMoreInfo} />
           </div>
-          <div className="productMoreInfo">
+          <div className={`productMoreInfo ${moreInfo?"productMoreInfoOpen":""}`}>
             <div className="productMoreInfoHide">
               <MoreInfoHideButton onSelect={handleHideMoreInfo} />
             </div>
