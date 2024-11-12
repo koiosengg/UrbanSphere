@@ -127,7 +127,7 @@ html {
   align-items: center;
   justify-content: flex-start;
   z-index: 1;
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
 
 .productMain {
