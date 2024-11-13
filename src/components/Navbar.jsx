@@ -13,7 +13,7 @@ function Navbar() {
     <div className="navbar">
       <img src={Logo} className="navbarLogo" onClick={scrollToTop} alt="Logo" />
       <div className="navbarTab">
-        <div className="navbarLink">Products</div>
+        <a href="/#products" className="navbarLink">Products</a>
         <a href="/#contact" className="navbarLink">Contact Us</a>
       </div>
     </div>

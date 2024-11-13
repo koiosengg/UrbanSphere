@@ -45,7 +45,7 @@ html {
 
 .navbarLink {
   text-decoration: none;
-  color: var(--White-BG, #fff);
+  color: var(--White-BG, #cdcdcd);
   text-align: center;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: Inter;
@@ -53,6 +53,11 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: all 0.3s;
+}
+
+.navbarLink:hover {
+  color: #fff;
 }
 
 /* Home Page */
@@ -642,6 +647,10 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+.footerDownLeft a:hover {
+  border-bottom: 1px solid #ffbf00;
+}
+
 .footerDownRight {
   display: flex;
   align-items: center;
@@ -659,4 +668,13 @@ html {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.footerDownRight a {
+  color: #cdcdcd;
+  transition: all 0.3s;
+}
+
+.footerDownRight a:hover {
+  color: #fff;
 }
