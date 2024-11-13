@@ -118,6 +118,7 @@ html {
   justify-content: flex-start;
   z-index: 1;
   overflow: hidden;
+  border-radius: 40px;
 }
 
 .productDivSlide {
@@ -179,10 +180,9 @@ html {
   transition: all 0.5s;
 }
 
-.productMoreInfoOpen{
+.productMoreInfoOpen {
   opacity: 1;
 }
-
 
 .productMoreInfoHide {
   width: 100%;

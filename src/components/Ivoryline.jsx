@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import IvorylineBackground from "../assets/Ivoryline/Ivoryline-Background.png";
-import IvorylineName from "../assets/Ivoryline/Ivoryline-Name.png";
-import IvorylineNameContent from "../assets/Ivoryline/Ivoryline-Name-Content.png";
+import MainBackground from "../assets/Ivoryline/Ivoryline-Background.png";
+import MainSectionName from "../assets/Ivoryline/Ivoryline-Name.png";
+import InfoSectionName from "../assets/Ivoryline/Ivoryline-Name-Content.png";
 import productImg1 from "../assets/Ivoryline/productImg1.png";
 import productImg2 from "../assets/Ivoryline/productImg2.png";
 import productImg3 from "../assets/Ivoryline/productImg3.png";
@@ -28,7 +28,7 @@ function Ivoryline() {
         className="productContainerBackground"
         alt="Urban Sphere Ivoryline Background"
       >
-        <img src={IvorylineBackground} />
+        <img src={MainBackground} />
       </div>
       <div className="productDiv">
         <div
@@ -36,24 +36,28 @@ function Ivoryline() {
           style={{ transform: `translateX(${moreInfo ? "-100%" : "0"})` }}
         >
           <div className="productMain">
-            <img src={IvorylineName} alt="Urban Sphere Ivoryline Name" />
+            <img src={MainSectionName} alt="Urban Sphere Ivoryline Name" />
             <MoreInfoButton onSelect={handleOpenMoreInfo} />
           </div>
-          <div className={`productMoreInfo ${moreInfo?"productMoreInfoOpen":""}`}>
+          <div
+            className={`productMoreInfo ${
+              moreInfo ? "productMoreInfoOpen" : ""
+            }`}
+          >
             <div className="productMoreInfoHide">
               <MoreInfoHideButton onSelect={handleHideMoreInfo} />
             </div>
             <div className="productMoreInfoMain">
               <div className="productMoreInfoMainLeft">
                 <img
-                  src={IvorylineBackground}
+                  src={MainBackground}
                   alt="Urban Sphere Ivoryline Main Img"
                   className="productMoreInfoMainLeftMainImg"
                 />
                 <div className="heading">
                   <span>Urban Sphere</span>
                   <div className="content">
-                    <img src={IvorylineNameContent} />
+                    <img src={InfoSectionName} />
                     <p>
                       The 'Ivoryline' is a range of buses from Urban Sphere,
                       featuring a variety of sizes (6, 7.5, 9, and 14 meters).
