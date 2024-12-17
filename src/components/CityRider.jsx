@@ -20,7 +20,7 @@ function CityRider() {
     setMoreInfo(false);
   }
   return (
-    <div className="productContainer">
+    <div className="productContainer" id="CityRider">
       <div
         className="productContainerBackground"
         alt="Urban Sphere Ivoryline Background"

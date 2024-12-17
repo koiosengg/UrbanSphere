@@ -19,11 +19,9 @@ html {
   align-items: center;
   border-radius: 20px;
   border: 1px solid rgba(66, 66, 66, 0.5);
-  background: linear-gradient(
-    90deg,
-    rgba(17, 17, 17, 0.6) 0%,
-    rgba(21, 21, 21, 0.6) 98.01%
-  );
+  background: linear-gradient(90deg,
+      rgba(17, 17, 17, 0.6) 0%,
+      rgba(21, 21, 21, 0.6) 98.01%);
   backdrop-filter: blur(20px);
   position: fixed;
   top: 0;
@@ -44,7 +42,35 @@ html {
 }
 
 .navbarLink {
+  height: 48px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--White-BG, #cdcdcd);
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.navbarLink:hover {
+  color: #fff;
+}
+
+.navbarLink section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbarLink p {
   color: var(--White-BG, #cdcdcd);
   text-align: center;
   font-variant-numeric: lining-nums proportional-nums;
@@ -56,9 +82,54 @@ html {
   transition: all 0.3s;
 }
 
-.navbarLink:hover {
+.navbar section img {
+  transition: all 0.3s;
+}
+
+.navbarLink:hover p {
   color: #fff;
 }
+
+.navbarLink:hover img {
+  transform: rotate(180deg);
+}
+
+.navbar-dropdown-container {
+  width: 170px;
+  position: absolute;
+  top: 48px;
+  display: none;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.60), rgba(21, 21, 21, 0.60)),
+    linear-gradient(0deg, #3d3d3d 10%, #151515 50%);
+  border: double 1px transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.navbar-dropdown {
+  display: inline-flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  backdrop-filter: blur(20px);
+}
+
+.navbarLink:hover .navbar-dropdown-container {
+  display: inline-flex;
+}
+
+.navbar-dropdown a {
+  text-decoration: none;
+  color: #D6D6D6;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 
 /* Home Page */
 
@@ -74,9 +145,27 @@ html {
 .bannerBackground {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   border-radius: 0px 0px 60px 60px;
-  background: linear-gradient(182deg, #111 16.53%, rgba(0, 0, 0, 0.71) 98.11%);
+  overflow: hidden;
+}
+
+.bannerSlideContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: all 0.3s;
+}
+
+.bannerBackground img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 
 .bannerLogo {
@@ -86,6 +175,31 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+
+.bannerDotsContainer {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.bannerDotsContainer section {
+  width: 6px;
+  height: 6px;
+  background: #4B4B4B;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.bannerDotsContainer .activeBannerDot {
+  background: #D9D9D9;
 }
 
 /* Product Pages */
@@ -175,11 +289,9 @@ html {
   gap: 32px;
   padding: 20px 60px;
   align-self: stretch;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%);
   flex-shrink: 0;
   opacity: 0;
   transition: all 0.5s;
