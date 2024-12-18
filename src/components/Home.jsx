@@ -4,6 +4,7 @@ import Ivoryline from "./Ivoryline";
 import Viyana from "./Viyana";
 import CityRider from "./CityRider";
 import Contact from "./Contact";
+import FutureSegments from "./FutureSegments";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <Ivoryline />
         <Viyana />
         <CityRider />
+        <FutureSegments />
       </div>
       <Contact />
     </div>

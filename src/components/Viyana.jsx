@@ -34,8 +34,11 @@ function Viyana() {
           style={{ transform: `translateX(${moreInfo ? "-100%" : "0"})` }}
         >
           <div className="productMain">
-            <img src={MainSectionName} alt="Urban Sphere Ivoryline Name" />
-            <MoreInfoButton onSelect={handleOpenMoreInfo} />
+            <p>Low Floor Buses</p>
+            <div className="productMainContainer">
+              <img src={MainSectionName} alt="Urban Sphere Ivoryline Name" />
+              <MoreInfoButton onSelect={handleOpenMoreInfo} />
+            </div>
           </div>
           <div
             className={`productMoreInfo ${
@@ -53,37 +56,38 @@ function Viyana() {
                   className="productMoreInfoMainLeftMainImg"
                 />
                 <div className="heading">
-                  <span>Urban Sphere</span>
                   <div className="content">
                     <img src={InfoSectionName} />
                     <p>
-                      The 'Ivoryline' is a range of buses from Urban Sphere,
-                      featuring a variety of sizes (6, 7.5, 9, and 14 meters).
-                      The lineup draws its inspiration from Urban Sphere's
-                      Navagraha Design philosophy, taking cues from the vahana
-                      (vehicle) of Budhgraha or Mercury – the elephant.
-                      Elephants have been historically associated with royalty
-                      and are renowned for their strength, making them an ideal
-                      inspiration for heavy transport vehicles.
+                      The 'VIYANA' is a range of Low Floor Electric Buses from
+                      Urban Sphere, featuring a variety of sizes (9,12, and 14
+                      meters Tarmac Buses).
                     </p>
                   </div>
                 </div>
               </div>
               <div className="productMoreInfoMainMiddle">
                 <div className="productImgContainer">
-                  <img
-                    src={productImg1}
-                    alt="Urban Sphere Ivoryline Product Image 1"
-                  ></img>
+                  <div className="productImgBox">
+                    <img
+                      src={productImg1}
+                      alt="Urban Sphere Ivoryline Product Image 1"
+                    ></img>
+                  </div>
+
                   <div className="productImgDiv">
-                    <img
-                      src={productImg2}
-                      alt="Urban Sphere Ivoryline Product Image 1"
-                    ></img>
-                    <img
-                      src={productImg3}
-                      alt="Urban Sphere Ivoryline Product Image 1"
-                    ></img>
+                    <div className="productImgBox">
+                      <img
+                        src={productImg2}
+                        alt="Urban Sphere Ivoryline Product Image 1"
+                      ></img>
+                    </div>
+                    <div className="productImgBox">
+                      <img
+                        src={productImg3}
+                        alt="Urban Sphere Ivoryline Product Image 1"
+                      ></img>
+                    </div>
                   </div>
                 </div>
                 <div className="productButtonContainer">

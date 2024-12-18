@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MainBackground from "../assets/CityRider/CityRider-Background.png";
+import MainSectionBackground from "../assets/CityRider/CityRider-Section-Background.png";
 import MainSectionName from "../assets/CityRider/CityRider-Name.png";
 import InfoSectionName from "../assets/CityRider/CityRider-Name-Content.png";
 import productImg1 from "../assets/CityRider/productImg1.png";
@@ -33,8 +34,11 @@ function CityRider() {
           style={{ transform: `translateX(${moreInfo ? "-100%" : "0"})` }}
         >
           <div className="productMain">
-            <img src={MainSectionName} alt="Urban Sphere Ivoryline Name" />
-            <MoreInfoButton onSelect={handleOpenMoreInfo} />
+            <p style={{ color: "#1E1E1E" }}>Micro Buses</p>
+            <div className="productMainContainer">
+              <img src={MainSectionName} alt="Urban Sphere Ivoryline Name" />
+              <MoreInfoButton onSelect={handleOpenMoreInfo} />
+            </div>
           </div>
           <div
             className={`productMoreInfo ${
@@ -47,42 +51,43 @@ function CityRider() {
             <div className="productMoreInfoMain">
               <div className="productMoreInfoMainLeft">
                 <img
-                  src={MainBackground}
+                  src={MainSectionBackground}
                   alt="Urban Sphere Ivoryline Main Img"
                   className="productMoreInfoMainLeftMainImg"
                 />
                 <div className="heading">
-                  <span>Urban Sphere</span>
                   <div className="content">
                     <img src={InfoSectionName} />
                     <p>
-                      The 'Ivoryline' is a range of buses from Urban Sphere,
-                      featuring a variety of sizes (6, 7.5, 9, and 14 meters).
-                      The lineup draws its inspiration from Urban Sphere's
-                      Navagraha Design philosophy, taking cues from the vahana
-                      (vehicle) of Budhgraha or Mercury – the elephant.
-                      Elephants have been historically associated with royalty
-                      and are renowned for their strength, making them an ideal
-                      inspiration for heavy transport vehicles.
+                      The 'CITY RIDER' is a range of Micro Electric Buses from
+                      Urban Sphere, featuring a variety of sizes (4.9 & 5.9
+                      meters buses).
                     </p>
                   </div>
                 </div>
               </div>
               <div className="productMoreInfoMainMiddle">
                 <div className="productImgContainer">
-                  <img
-                    src={productImg1}
-                    alt="Urban Sphere Ivoryline Product Image 1"
-                  ></img>
+                  <div className="productImgBox">
+                    <img
+                      src={productImg1}
+                      alt="Urban Sphere Ivoryline Product Image 1"
+                    ></img>
+                  </div>
+
                   <div className="productImgDiv">
-                    <img
-                      src={productImg2}
-                      alt="Urban Sphere Ivoryline Product Image 1"
-                    ></img>
-                    <img
-                      src={productImg3}
-                      alt="Urban Sphere Ivoryline Product Image 1"
-                    ></img>
+                    <div className="productImgBox">
+                      <img
+                        src={productImg2}
+                        alt="Urban Sphere Ivoryline Product Image 1"
+                      ></img>
+                    </div>
+                    <div className="productImgBox">
+                      <img
+                        src={productImg3}
+                        alt="Urban Sphere Ivoryline Product Image 1"
+                      ></img>
+                    </div>
                   </div>
                 </div>
                 <div className="productButtonContainer">

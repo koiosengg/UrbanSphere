@@ -12,7 +12,7 @@ function Banner() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Delay of 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [images.length]);
