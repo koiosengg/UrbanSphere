@@ -24,7 +24,7 @@ function Navbar() {
               <a href="/#Ivoryline">Ivoryline</a>
               <a href="/#Viyaana">Viyaana</a>
               <a href="/#CityRider">City Rider</a>
-              <a>Future Segments</a>
+              <a href="/#FutureSegments">Future Segments</a>
             </div>
           </div>
         </div>

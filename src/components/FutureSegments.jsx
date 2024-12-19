@@ -21,7 +21,7 @@ function FutureSegments() {
   }
 
   return (
-    <div className="productContainer" id="Ivoryline">
+    <div className="productContainer" id="FutureSegments">
       <div
         className="productContainerBackground"
         alt="Urban Sphere Ivoryline Background"
