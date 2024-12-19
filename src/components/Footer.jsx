@@ -90,11 +90,18 @@ function Footer() {
           </a>
         </p>
         <div className="footerDownRight">
+          <a href="#" className="desktop">
+            www.urbansphere.com
+          </a>
+          <p className="desktop">|</p>
           <a href="#">Privacy</a>
-          <p>|</p>
+          <p className="desktop">|</p>
           <a href="#">Cookies</a>
-          <p>|</p>
+          <p className="desktop">|</p>
           <a href="#">Contact Us</a>
+        </div>
+        <div className="footerDownRight mobile">
+          <a href="#">www.urbansphere.com</a>
         </div>
       </div>
     </div>

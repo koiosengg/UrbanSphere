@@ -14,31 +14,33 @@ function Contact() {
       <form>
         <section>
           <input
-            name="email"
-            type="email"
+            name="name"
+            type="text"
             required
             autoComplete="on"
-            placeholder="Your Email"
-            aria-label="Email Address"
+            placeholder="Your Name"
+            aria-label="Enter your name"
           />
           <input
-            name="email"
-            type="email"
+            name="mobile_number"
+            type="tel"
             required
             autoComplete="on"
-            placeholder="Your Email"
-            aria-label="Email Address"
+            placeholder="Your Mobile Number"
+            aria-label="Enter your mobile number"
+            pattern="[0-9]{10}"
+            title="Please enter a valid 10-digit mobile number."
           />
         </section>
         <input
-          name="email"
+          name="email_address"
           type="email"
           required
           autoComplete="on"
-          placeholder="Your Email"
-          aria-label="Email Address"
+          placeholder="Your Email Address"
+          aria-label="Enter your email address"
         />
-        <button type="submit" aria-label="Submit form">
+        <button type="submit" aria-label="Submit the contact form">
           Subscribe
         </button>
       </form>
