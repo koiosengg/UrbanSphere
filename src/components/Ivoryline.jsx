@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MainBackground from "../assets/Ivoryline/Ivoryline-Background.png";
 import MainSectionName from "../assets/Ivoryline/Ivoryline-Name.png";
+import MainSectionNameMobile from "../assets/Ivoryline/Ivoryline-Name-Mobile.png";
 import InfoSectionName from "../assets/Ivoryline/Ivoryline-Name-Content.png";
 import productImg1 from "../assets/Ivoryline/productImg1.png";
 import productImg2 from "../assets/Ivoryline/productImg2.png";
@@ -38,7 +39,16 @@ function Ivoryline() {
           <div className="productMain">
             <p>City Buses</p>
             <div className="productMainContainer">
-              <img src={MainSectionName} alt="Urban Sphere Ivoryline Name" />
+              <img
+                src={MainSectionName}
+                className="desktop"
+                alt="Urban Sphere Ivoryline Name"
+              />
+              <img
+                src={MainSectionNameMobile}
+                className="mobile"
+                alt="Urban Sphere Ivoryline Name"
+              />
               <MoreInfoButton onSelect={handleOpenMoreInfo} />
             </div>
           </div>
@@ -49,6 +59,14 @@ function Ivoryline() {
           >
             <div className="productMoreInfoHide">
               <MoreInfoHideButton onSelect={handleHideMoreInfo} />
+              <div className="productMoreInfoMainRight mobile">
+                <div className="flagLine">
+                  <div className="line" id="orange"></div>
+                  <div className="line" id="white"></div>
+                  <div className="line" id="green"></div>
+                </div>
+                <h3>Proudly Designed & Made in India</h3>
+              </div>
             </div>
             <div className="productMoreInfoMain">
               <div className="productMoreInfoMainLeft">
@@ -112,7 +130,7 @@ function Ivoryline() {
                   <a className="brochureButton">Download Brochure</a>
                 </div>
               </div>
-              <div className="productMoreInfoMainRight">
+              <div className="productMoreInfoMainRight desktop">
                 <div className="flagLine">
                   <div className="line" id="orange"></div>
                   <div className="line" id="white"></div>

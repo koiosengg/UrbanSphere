@@ -284,7 +284,7 @@ html {
 .productMainContainer {
   width: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   gap: 16px;
 }
@@ -713,6 +713,20 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: all 0.3s;
+}
+
+
+.contact form button:hover {
+  background: #C6C6C6;
+  color: #111;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 /* Footer */
@@ -1031,6 +1045,288 @@ html {
     justify-content: center;
   }
 
+  /* Home */
+
+  .Banner {
+    padding: 0px 22px 52px 22px;
+  }
+
+  .bannerBackground {
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .bannerLogo {
+    width: 70%;
+  }
+
+  .productContainer {
+    padding: 48px 20px;
+  }
+
+  .productContainerBackground {
+    padding: 48px 20px;
+  }
+
+  .productContainerBackground img {
+    border-radius: 16px;
+  }
+
+  .productDiv {
+    border-radius: 16px;
+  }
+
+  .productMain {
+    padding: 20px 16px;
+  }
+
+  .productMain p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+
+  .productMainContainer {
+    gap: 4px;
+  }
+
+  .productMain img {
+    height: 16px;
+  }
+
+  .productMain svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .productMain span {
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .productMoreInfo {
+    display: flex;
+    padding: 16px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+  }
+
+  .productMoreInfoHide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .productMoreInfoMainRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    flex-shrink: 0;
+  }
+
+  .flagLine {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .line {
+    width: 52px;
+    height: 4px;
+    flex-shrink: 0;
+  }
+
+  .productMoreInfoMain .productMoreInfoMainRight {
+    display: none;
+  }
+
+  .productMoreInfoMainRight h3 {
+    width: auto;
+    transform: none;
+    position: static;
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .productMoreInfoMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .productMoreInfoMainLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .productMoreInfoMainLeftMainImg {
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+  }
+
+  .productMoreInfoMainLeft .heading .content {
+    gap: 4px;
+  }
+
+  .productMoreInfoMainLeft .heading .content img {
+    height: 40px;
+  }
+
+  .productMoreInfoMainLeft .heading .content p {
+    color: rgba(255, 255, 255, 0.80);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+
+  .productMoreInfoMainMiddle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+  }
+
+  .productButtonContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .knowMoreButton {
+    width: 100%;
+    display: flex;
+    padding: 11.899px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 11.899px;
+    align-self: stretch;
+    border-radius: 34.506px;
+    background: #FFF;
+    color: #111;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .brochureButton {
+    display: flex;
+    padding: 11.899px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 11.899px;
+    align-self: stretch;
+    border-radius: 34.506px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  /* Contact */
+
+  .contact {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .contact .heading {
+    padding-top: 0;
+  }
+
+  .contact .heading h2 {
+    color: #FFF;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -1.28px;
+  }
+
+  .contact .heading p {
+    color: #BABABA;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    padding: 0;
+    background: none;
+  }
+
+  .contact form section {
+    flex-direction: column;
+  }
+
+  .contact form input {
+    color: #969696;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
   /* Footer */
 

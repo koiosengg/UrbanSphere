@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MainBackground from "../assets/Viyana/Viyana-Background.png";
 import MainSectionName from "../assets/Viyana/Viyana-Name.png";
+import MainSectionNameMobile from "../assets/Viyana/Viyana-Name-Mobile.png";
 import InfoSectionName from "../assets/Viyana/Viyana-Name-Content.png";
 import productImg1 from "../assets/Viyana/productImg1.png";
 import productImg2 from "../assets/Viyana/productImg2.png";
@@ -24,7 +25,7 @@ function Viyana() {
     <div className="productContainer" id="Viyaana">
       <div
         className="productContainerBackground"
-        alt="Urban Sphere Ivoryline Background"
+        alt="Urban Sphere Viyaana Background"
       >
         <img src={MainBackground} />
       </div>
@@ -36,7 +37,8 @@ function Viyana() {
           <div className="productMain">
             <p>Low Floor Buses</p>
             <div className="productMainContainer">
-              <img src={MainSectionName} alt="Urban Sphere Ivoryline Name" />
+              <img src={MainSectionName} className="desktop" alt="Urban Sphere Viyana Name" />
+              <img src={MainSectionNameMobile} className="mobile" alt="Urban Sphere Viyana Name" />
               <MoreInfoButton onSelect={handleOpenMoreInfo} />
             </div>
           </div>
@@ -47,12 +49,20 @@ function Viyana() {
           >
             <div className="productMoreInfoHide">
               <MoreInfoHideButton onSelect={handleHideMoreInfo} />
+              <div className="productMoreInfoMainRight mobile">
+                <div className="flagLine">
+                  <div className="line" id="orange"></div>
+                  <div className="line" id="white"></div>
+                  <div className="line" id="green"></div>
+                </div>
+                <h3>Proudly Designed & Made in India</h3>
+              </div>
             </div>
             <div className="productMoreInfoMain">
               <div className="productMoreInfoMainLeft">
                 <img
                   src={MainBackground}
-                  alt="Urban Sphere Ivoryline Main Img"
+                  alt="Urban Sphere Viyaana Main Img"
                   className="productMoreInfoMainLeftMainImg"
                 />
                 <div className="heading">
@@ -71,7 +81,7 @@ function Viyana() {
                   <div className="productImgBox">
                     <img
                       src={productImg1}
-                      alt="Urban Sphere Ivoryline Product Image 1"
+                      alt="Urban Sphere Viyaana Product Image 1"
                     ></img>
                   </div>
 
@@ -79,13 +89,13 @@ function Viyana() {
                     <div className="productImgBox">
                       <img
                         src={productImg2}
-                        alt="Urban Sphere Ivoryline Product Image 1"
+                        alt="Urban Sphere Viyaana Product Image 1"
                       ></img>
                     </div>
                     <div className="productImgBox">
                       <img
                         src={productImg3}
-                        alt="Urban Sphere Ivoryline Product Image 1"
+                        alt="Urban Sphere Viyaana Product Image 1"
                       ></img>
                     </div>
                   </div>
@@ -97,7 +107,7 @@ function Viyana() {
                   <a className="brochureButton">Download Brochure</a>
                 </div>
               </div>
-              <div className="productMoreInfoMainRight">
+              <div className="productMoreInfoMainRight desktop">
                 <div className="flagLine">
                   <div className="line" id="orange"></div>
                   <div className="line" id="white"></div>

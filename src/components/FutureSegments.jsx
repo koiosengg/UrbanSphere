@@ -47,6 +47,14 @@ function FutureSegments() {
           >
             <div className="productMoreInfoHide">
               <MoreInfoHideButton onSelect={handleHideMoreInfo} />
+              <div className="productMoreInfoMainRight mobile">
+                <div className="flagLine">
+                  <div className="line" id="orange"></div>
+                  <div className="line" id="white"></div>
+                  <div className="line" id="green"></div>
+                </div>
+                <h3>Proudly Designed & Made in India</h3>
+              </div>
             </div>
             <div className="productMoreInfoMain">
               <div className="productMoreInfoMainLeft">
@@ -96,7 +104,7 @@ function FutureSegments() {
                   <a className="brochureButton">Download Brochure</a>
                 </div>
               </div>
-              <div className="productMoreInfoMainRight">
+              <div className="productMoreInfoMainRight desktop">
                 <div className="flagLine">
                   <div className="line" id="orange"></div>
                   <div className="line" id="white"></div>

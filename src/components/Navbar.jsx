@@ -91,7 +91,13 @@ function Navbar() {
           </nav>
         </div>
         <div className="mobile-footer-down">
-          <a className="mobile-contact-button">Contact us</a>
+          <a
+            href="/#contact"
+            onClick={toggleMobileNav}
+            className="mobile-contact-button"
+          >
+            Contact us
+          </a>
           <div className="footerUpRight">
             <a href="#" className="facebook">
               <svg
