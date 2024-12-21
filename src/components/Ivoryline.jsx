@@ -86,7 +86,7 @@ function Ivoryline() {
                 </div>
               </div>
               <div className="productMoreInfoMainMiddle">
-                <div className="productImgContainer">
+                <div className="productImgContainer desktop">
                   <div className="productImgDiv">
                     <div className="productImgBox">
                       <img
@@ -120,6 +120,48 @@ function Ivoryline() {
                         src={productImg5}
                         alt="Urban Sphere Ivoryline Product Image 1"
                       ></img>
+                    </div>
+                  </div>
+                </div>
+                <div className="mobileProductImgContainer mobile">
+                  <div className="productImgBox">
+                    <img
+                      src={productImg3}
+                      style={{ height: "160px" }}
+                      alt="Urban Sphere Ivoryline Product Image 1"
+                    ></img>
+                  </div>
+                  <div
+                    className="mobileProductImgContainer"
+                    style={{ flexDirection: "column" }}
+                  >
+                    <div className="mobileProductImgContainer">
+                      <div className="productImgBox">
+                        <img
+                          src={productImg1}
+                          alt="Urban Sphere Ivoryline Product Image 1"
+                        ></img>
+                      </div>
+                      <div className="productImgBox">
+                        <img
+                          src={productImg2}
+                          alt="Urban Sphere Ivoryline Product Image 1"
+                        ></img>
+                      </div>
+                    </div>
+                    <div className="mobileProductImgContainer">
+                      <div className="productImgBox">
+                        <img
+                          src={productImg4}
+                          alt="Urban Sphere Ivoryline Product Image 1"
+                        ></img>
+                      </div>
+                      <div className="productImgBox">
+                        <img
+                          src={productImg5}
+                          alt="Urban Sphere Ivoryline Product Image 1"
+                        ></img>
+                      </div>
                     </div>
                   </div>
                 </div>

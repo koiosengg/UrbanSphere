@@ -25,7 +25,7 @@ function CityRider() {
     <div className="productContainer" id="CityRider">
       <div
         className="productContainerBackground"
-        alt="Urban Sphere CityRider Background"
+        alt="Urban Sphere City Rider Background"
       >
         <img src={MainBackground} />
       </div>
@@ -35,11 +35,21 @@ function CityRider() {
           style={{ transform: `translateX(${moreInfo ? "-100%" : "0"})` }}
         >
           <div className="productMain">
-            <p style={{ color: "#1E1E1E" }} className="desktop">Micro Buses</p>
+            <p style={{ color: "#1E1E1E" }} className="desktop">
+              Micro Buses
+            </p>
             <p className="mobile">Micro Buses</p>
             <div className="productMainContainer">
-              <img src={MainSectionName} className="desktop" alt="Urban Sphere CityRider Name" />
-              <img src={MainSectionNameMobile} className="mobile" alt="Urban Sphere CityRider Name" />
+              <img
+                src={MainSectionName}
+                className="desktop"
+                alt="Urban Sphere City Rider Name"
+              />
+              <img
+                src={MainSectionNameMobile}
+                className="mobile"
+                alt="Urban Sphere City Rider Name"
+              />
               <MoreInfoButton onSelect={handleOpenMoreInfo} />
             </div>
           </div>
@@ -63,7 +73,7 @@ function CityRider() {
               <div className="productMoreInfoMainLeft">
                 <img
                   src={MainSectionBackground}
-                  alt="Urban Sphere CityRider Main Img"
+                  alt="Urban Sphere City Rider Main Img"
                   className="productMoreInfoMainLeftMainImg"
                 />
                 <div className="heading">
@@ -78,11 +88,11 @@ function CityRider() {
                 </div>
               </div>
               <div className="productMoreInfoMainMiddle">
-                <div className="productImgContainer">
+                <div className="productImgContainer desktop">
                   <div className="productImgBox">
                     <img
                       src={productImg1}
-                      alt="Urban Sphere CityRider Product Image 1"
+                      alt="Urban Sphere City Rider Product Image 1"
                     ></img>
                   </div>
 
@@ -90,14 +100,44 @@ function CityRider() {
                     <div className="productImgBox">
                       <img
                         src={productImg2}
-                        alt="Urban Sphere CityRider Product Image 1"
+                        alt="Urban Sphere City Rider Product Image 1"
                       ></img>
                     </div>
                     <div className="productImgBox">
                       <img
                         src={productImg3}
-                        alt="Urban Sphere CityRider Product Image 1"
+                        alt="Urban Sphere City Rider Product Image 1"
                       ></img>
+                    </div>
+                  </div>
+                </div>
+                <div className="mobileProductImgContainer mobile">
+                  <div className="productImgBox">
+                    <img
+                      src={productImg1}
+                      style={{ height: "160px" }}
+                      alt="Urban Sphere City Rider Product Image 1"
+                    ></img>
+                  </div>
+                  <div
+                    className="mobileProductImgContainer"
+                    style={{ flexDirection: "column" }}
+                  >
+                    <div className="mobileProductImgContainer">
+                      <div className="productImgBox">
+                        <img
+                          src={productImg2}
+                          alt="Urban Sphere City Rider Product Image 1"
+                        ></img>
+                      </div>
+                    </div>
+                    <div className="mobileProductImgContainer">
+                      <div className="productImgBox">
+                        <img
+                          src={productImg3}
+                          alt="Urban Sphere City Rider Product Image 1"
+                        ></img>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -37,8 +37,16 @@ function Viyana() {
           <div className="productMain">
             <p>Low Floor Buses</p>
             <div className="productMainContainer">
-              <img src={MainSectionName} className="desktop" alt="Urban Sphere Viyana Name" />
-              <img src={MainSectionNameMobile} className="mobile" alt="Urban Sphere Viyana Name" />
+              <img
+                src={MainSectionName}
+                className="desktop"
+                alt="Urban Sphere Viyana Name"
+              />
+              <img
+                src={MainSectionNameMobile}
+                className="mobile"
+                alt="Urban Sphere Viyana Name"
+              />
               <MoreInfoButton onSelect={handleOpenMoreInfo} />
             </div>
           </div>
@@ -77,7 +85,7 @@ function Viyana() {
                 </div>
               </div>
               <div className="productMoreInfoMainMiddle">
-                <div className="productImgContainer">
+                <div className="productImgContainer desktop">
                   <div className="productImgBox">
                     <img
                       src={productImg1}
@@ -97,6 +105,36 @@ function Viyana() {
                         src={productImg3}
                         alt="Urban Sphere Viyaana Product Image 1"
                       ></img>
+                    </div>
+                  </div>
+                </div>
+                <div className="mobileProductImgContainer mobile">
+                  <div className="productImgBox">
+                    <img
+                      src={productImg1}
+                      style={{ height: "160px" }}
+                      alt="Urban Sphere Viyaana Product Image 1"
+                    ></img>
+                  </div>
+                  <div
+                    className="mobileProductImgContainer"
+                    style={{ flexDirection: "column" }}
+                  >
+                    <div className="mobileProductImgContainer">
+                      <div className="productImgBox">
+                        <img
+                          src={productImg2}
+                          alt="Urban Sphere Viyaana Product Image 1"
+                        ></img>
+                      </div>
+                    </div>
+                    <div className="mobileProductImgContainer">
+                      <div className="productImgBox">
+                        <img
+                          src={productImg3}
+                          alt="Urban Sphere Viyaana Product Image 1"
+                        ></img>
+                      </div>
                     </div>
                   </div>
                 </div>

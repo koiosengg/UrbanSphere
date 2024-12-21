@@ -24,7 +24,7 @@ function FutureSegments() {
     <div className="productContainer" id="FutureSegments">
       <div
         className="productContainerBackground"
-        alt="Urban Sphere Ivoryline Background"
+        alt="Urban Sphere Future Segments Background"
       >
         <img src={MainBackground} />
       </div>
@@ -60,7 +60,7 @@ function FutureSegments() {
               <div className="productMoreInfoMainLeft">
                 <img
                   src={MainSectionBackground}
-                  alt="Urban Sphere Ivoryline Main Img"
+                  alt="Urban Sphere Future Segments Main Img"
                   className="productMoreInfoMainLeftMainImg"
                 />
                 <div className="heading">
@@ -77,24 +77,54 @@ function FutureSegments() {
                 </div>
               </div>
               <div className="productMoreInfoMainMiddle">
-                <div className="productImgContainer">
+                <div className="productImgContainer desktop">
                   <div className="productImgBox">
                     <img
                       src={productImg1}
-                      alt="Urban Sphere Ivoryline Product Image 1"
+                      alt="Urban Sphere Future Segments Product Image 1"
                     ></img>
                   </div>
                   <div className="productImgBox">
                     <img
                       src={productImg2}
-                      alt="Urban Sphere Ivoryline Product Image 1"
+                      alt="Urban Sphere Future Segments Product Image 1"
                     ></img>
                   </div>
                   <div className="productImgBox">
                     <img
                       src={productImg3}
-                      alt="Urban Sphere Ivoryline Product Image 1"
+                      alt="Urban Sphere Future Segments Product Image 1"
                     ></img>
+                  </div>
+                </div>
+                <div className="mobileProductImgContainer mobile">
+                  <div className="productImgBox">
+                    <img
+                      src={productImg1}
+                      style={{ height: "160px" }}
+                      alt="Urban Sphere Future Segments Product Image 1"
+                    ></img>
+                  </div>
+                  <div
+                    className="mobileProductImgContainer"
+                    style={{ flexDirection: "column" }}
+                  >
+                    <div className="mobileProductImgContainer">
+                      <div className="productImgBox">
+                        <img
+                          src={productImg2}
+                          alt="Urban Sphere Future Segments Product Image 1"
+                        ></img>
+                      </div>
+                    </div>
+                    <div className="mobileProductImgContainer">
+                      <div className="productImgBox">
+                        <img
+                          src={productImg3}
+                          alt="Urban Sphere Future Segments Product Image 1"
+                        ></img>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="productButtonContainer">
