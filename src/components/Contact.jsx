@@ -11,10 +11,10 @@ function Contact() {
           simple inquiry.
         </p>
       </div>
-      <form>
+      <form action="https://formspree.io/f/xqaekbkk" method="POST">
         <section>
           <input
-            name="name"
+            name="Name"
             type="text"
             required
             autoComplete="on"
@@ -22,7 +22,7 @@ function Contact() {
             aria-label="Enter your name"
           />
           <input
-            name="mobile_number"
+            name="Mobile Number"
             type="tel"
             required
             autoComplete="on"
@@ -33,7 +33,7 @@ function Contact() {
           />
         </section>
         <input
-          name="email_address"
+          name="Email Address"
           type="email"
           required
           autoComplete="on"

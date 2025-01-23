@@ -24,21 +24,11 @@ function Footer() {
           <p>Copyrights Urban Sphere {currentYear}</p>
         </div>
         <div className="footerUpRight">
-          <a href="#" className="facebook">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="17"
-              viewBox="0 0 16 17"
-              fill="none"
-            >
-              <path
-                d="M9.33268 9.04191H10.9993L11.666 6.37524H9.33268V5.04191C9.33268 4.35524 9.33268 3.70858 10.666 3.70858H11.666V1.46858C11.4487 1.43991 10.628 1.37524 9.76135 1.37524C7.95135 1.37524 6.66602 2.47991 6.66602 4.50858V6.37524H4.66602V9.04191H6.66602V14.7086H9.33268V9.04191Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-          <a href="#" className="linkedIn">
+          <a
+            href="https://www.linkedin.com/company/urban-sphere-ev/"
+            target="_blank"
+            className="linkedIn"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -52,7 +42,11 @@ function Footer() {
               />
             </svg>
           </a>
-          <a href="#" className="instagram">
+          <a
+            href="https://www.instagram.com/urbansphere.in?igsh=NXk3MDRudHFpcWlk"
+            target="_blank"
+            className="instagram"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -66,7 +60,11 @@ function Footer() {
               />
             </svg>
           </a>
-          <a href="#" className="youtube">
+          <a
+            href="https://youtube.com/@urbansphere?si=pg-XBfnZB8NF2VpW"
+            target="_blank"
+            className="youtube"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

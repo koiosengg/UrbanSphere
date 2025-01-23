@@ -13,19 +13,42 @@ const videos = [BannerVideo1, BannerVideo2, BannerVideo3, BannerVideo4];
 function Banner() {
   const [activeIndex, setActiveIndex] = useState(0);
   const videoRefs = useRef([]);
+  const bannerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    // Observe banner visibility
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+
+    if (bannerRef.current) {
+      observer.observe(bannerRef.current);
+    }
+
+    return () => {
+      if (bannerRef.current) {
+        observer.unobserve(bannerRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     videoRefs.current.forEach((video, index) => {
       if (video) {
-        if (index === activeIndex) {
-          video.play();
+        if (index === activeIndex - 1 && isVisible && activeIndex > 0) {
+          // Adjust index by subtracting 1 because the first item is an image
+          video.play().catch((error) => {
+            console.error("Error playing video:", error);
+          });
         } else {
           video.pause();
           video.currentTime = 0;
         }
       }
     });
-  }, [activeIndex]);
+  }, [activeIndex, isVisible]);
 
   const handlePrev = () => {
     if (activeIndex > 0) {
@@ -40,7 +63,7 @@ function Banner() {
   };
 
   return (
-    <div className="Banner">
+    <div className="Banner" ref={bannerRef}>
       <div className="bannerBackground">
         <div
           className="bannerSlideContainer"
@@ -53,8 +76,9 @@ function Banner() {
           {videos.map((video, index) => (
             <video
               key={index}
-              ref={(el) => (videoRefs.current[index + 1] = el)}
+              ref={(el) => (videoRefs.current[index] = el)}
               src={video}
+              controls
             ></video>
           ))}
         </div>
