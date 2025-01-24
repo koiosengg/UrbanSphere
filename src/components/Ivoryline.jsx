@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MainBackground from "../assets/Ivoryline/Ivoryline-Background.png";
 import MainSectionName from "../assets/Ivoryline/Ivoryline-Name.png";
 import MainSectionNameMobile from "../assets/Ivoryline/Ivoryline-Name-Mobile.png";
+import MainSectionImg from "../assets/Ivoryline/Ivoryline-Main-Img.png"
 import InfoSectionName from "../assets/Ivoryline/Ivoryline-Name-Content.png";
 import productImg1 from "../assets/Ivoryline/productImg1.png";
 import productImg2 from "../assets/Ivoryline/productImg2.png";
@@ -71,7 +72,7 @@ function Ivoryline() {
             <div className="productMoreInfoMain">
               <div className="productMoreInfoMainLeft">
                 <img
-                  src={MainBackground}
+                  src={MainSectionImg}
                   alt="Urban Sphere Ivoryline Main Img"
                   className="productMoreInfoMainLeftMainImg"
                 />
